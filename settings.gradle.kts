@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "Wordminded 2"
 include(":app")
 include(":data")
+include(":domain")
