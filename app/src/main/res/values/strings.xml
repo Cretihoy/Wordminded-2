@@ -6,4 +6,10 @@
     <string name="menu_settings_button">Settings</string>
 
     <string name="timer_dialog">Game will start in</string>
+
+    <string name="rules_title">RULES</string>
+    <string name="rules_text_one">Wordminded is a play on words for cheerful companies &amp; family evenings.</string>
+    <string name="rules_text_two">The game "Wordminded" has two decks of cards of different colors: red and blue. Blue cards are categories that limit the search for the desired word. The deck is red - it shows letters that will help you find the right word, since they begin with these letters.</string>
+    <string name="rules_text_three">Any player starts the game. He clicks on the screen of the phone. 2 cards appear. Players try as quickly as possible to name a word that fits the open category and starts with an open letter.</string>
+
 </resources>
