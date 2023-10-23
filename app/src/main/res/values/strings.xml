@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Wordminded 2</string>
+
+    <string name="menu_start_button">Start</string>
+    <string name="menu_rules_button">Rules</string>
+    <string name="menu_settings_button">Settings</string>
+
+    <string name="timer_dialog">Game will start in</string>
 </resources>
