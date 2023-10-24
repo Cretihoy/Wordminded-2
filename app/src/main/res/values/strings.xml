@@ -7,6 +7,9 @@
 
     <string name="timer_dialog">Game will start in</string>
 
+    <string name="game_end_title">Game end</string>
+    <string name="game_end_button">Play again</string>
+
     <string name="rules_title">RULES</string>
     <string name="rules_text_one">Wordminded is a play on words for cheerful companies &amp; family evenings.</string>
     <string name="rules_text_two">The game "Wordminded" has two decks of cards of different colors: red and blue. Blue cards are categories that limit the search for the desired word. The deck is red - it shows letters that will help you find the right word, since they begin with these letters.</string>
@@ -25,5 +28,85 @@
     <string name="reset_settings_title">Are you sure?</string>
     <string name="reset_settings_button_yes">Yes</string>
     <string name="reset_settings_button_no">No</string>
+
+    <string name="letter_01">A</string>
+    <string name="letter_02">B</string>
+    <string name="letter_03">C</string>
+    <string name="letter_04">D</string>
+    <string name="letter_05">E</string>
+    <string name="letter_06">F</string>
+    <string name="letter_07">G</string>
+    <string name="letter_08">H</string>
+    <string name="letter_09">I</string>
+    <string name="letter_10">J</string>
+    <string name="letter_11">K</string>
+    <string name="letter_12">L</string>
+    <string name="letter_13">M</string>
+    <string name="letter_14">N</string>
+    <string name="letter_15">O</string>
+    <string name="letter_16">P</string>
+    <string name="letter_17">Q</string>
+    <string name="letter_18">R</string>
+    <string name="letter_19">S</string>
+    <string name="letter_20">T</string>
+    <string name="letter_21">U</string>
+    <string name="letter_22">V</string>
+    <string name="letter_23">W</string>
+    <string name="letter_24">X</string>
+    <string name="letter_25">Y</string>
+    <string name="letter_26">Z</string>
+
+    <string name="task_01">Abbreviation</string>
+    <string name="task_02">Abstract concept</string>
+    <string name="task_03">Brand</string>
+    <string name="task_04">Substance, material</string>
+    <string name="task_05">Male name</string>
+    <string name="task_06">Female name</string>
+    <string name="task_07">City</string>
+    <string name="task_08">Food</string>
+    <string name="task_09">Animal</string>
+    <string name="task_10">Profession</string>
+    <string name="task_11">Plant</string>
+    <string name="task_12">Swear word</string>
+    <string name="task_13">Country</string>
+    <string name="task_14">Technical device</string>
+    <string name="task_15">Drink</string>
+    <string name="task_16">Adverbs</string>
+    <string name="task_17">Clothes</string>
+    <string name="task_18">Related to war (Proper names are allowed)</string>
+    <string name="task_19">Related to toys and games (Proper names are allowed)</string>
+    <string name="task_20">Related to music (Proper names are allowed)</string>
+    <string name="task_21">Related to sport (Proper names are allowed)</string>
+    <string name="task_22">Item under $20</string>
+    <string name="task_23">Item worth more than a million dollars</string>
+    <string name="task_24">Item that your family has</string>
+    <string name="task_25">Item that your family doesn\'t has</string>
+    <string name="task_26">Item that can be used for crime</string>
+    <string name="task_27">Item that couldn\'t exist 100 years ago</string>
+    <string name="task_28">Item not allowed on an airplane</string>
+    <string name="task_29">Item that could have been made 1000 years ago</string>
+    <string name="task_30">Item that can be made from wood</string>
+    <string name="task_31">Item that can be made from metal</string>
+    <string name="task_32">Weighs over a ton</string>
+    <string name="task_33">Can be seen in a hospital</string>
+    <string name="task_34">Can be seen in the village</string>
+    <string name="task_35">Can be seen at school or college</string>
+    <string name="task_36">Six letter word</string>
+    <string name="task_37">Word that ends with this letter</string>
+    <string name="task_38">Word that contains "X"</string>
+    <string name="task_39">Word in which this letter occurs twice</string>
+    <string name="task_40">Can be red</string>
+    <string name="task_41">Can be collectible</string>
+    <string name="task_42">Can be put in your pocket</string>
+    <string name="task_43">Can be broken or damaged by hand</string>
+    <string name="task_44">Fictional character</string>
+    <string name="task_45">Mountain, river, lake or sea</string>
+    <string name="task_46">Famous person (Name, pseudonym or nickname)</string>
+    <string name="task_47">What can you see right now</string>
+    <string name="task_48">Don\'t give to children</string>
+    <string name="task_49">Sold in a supermarket</string>
+    <string name="task_50">Creation (Movie, book, song)</string>
+    <string name="task_51">Thinner than a centimeter</string>
+    <string name="task_52">Human or animal body part</string>
 
 </resources>
