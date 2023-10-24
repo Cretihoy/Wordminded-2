@@ -19,9 +19,7 @@ import com.cretihoy.wordminded2.presentation.theme.spacingLarge
 fun UsersScreen(
     viewModel: UsersViewModel
 ) {
-    if (viewModel.users.isEmpty()) {
-        viewModel.loadUsers()
-    }
+    viewModel.loadUsers()
     Box {
         RotateView(
             header = { modifier ->
@@ -61,7 +59,7 @@ fun UsersScreen(
                 isShown = viewModel.isShownEdit,
                 model = model,
                 action = { name ->
-                    viewModel.onEditFinished(name)
+                    viewModel.onReplaceUserClicked(name)
                 }
             )
         }
@@ -69,7 +67,7 @@ fun UsersScreen(
             isShown = viewModel.isShownAdding,
             model = viewModel.addingInputModel,
             action = { name ->
-                viewModel.addUser(name)
+                viewModel.onAddUserClicked(name)
             }
         )
         DialogView(

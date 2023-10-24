@@ -1,7 +1,6 @@
 package com.cretihoy.wordminded2.presentation.screens.users
 
 import androidx.compose.runtime.MutableState
-import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -18,9 +17,10 @@ class UsersViewModel
     private val repository: UserRepository
 ) : ViewModel() {
 
+    val users = repository.users
+
     val dialogModel by lazy { factory.getDialogModel() }
     val titleModel by lazy { factory.getTitleModel() }
-    val users = mutableStateListOf<UserModel>()
     val newUserButtonModel by lazy { factory.getNewUserButtonModel() }
 
     var currentUser: UserModel? = null
@@ -32,17 +32,15 @@ class UsersViewModel
     val isShownEdit = mutableStateOf(false)
     val isShownAdding = mutableStateOf(false)
 
-    fun addUser(name: String) {
+    fun loadUsers() {
         viewModelScope.launch {
-            val user = factory.getUserModel(name)
-            users.add(user)
-            repository.addUser(user)
+            repository.loadUsers()
         }
     }
 
-    fun loadUsers() {
+    fun onAddUserClicked(name: String) {
         viewModelScope.launch {
-            users.addAll(repository.getUsers())
+            repository.addUser(name)
         }
     }
 
@@ -50,7 +48,6 @@ class UsersViewModel
         viewModelScope.launch {
             currentUser?.let { model ->
                 repository.removeUser(model)
-                users.remove(model)
                 isDialogShown.value = false
             }
         }
@@ -62,14 +59,12 @@ class UsersViewModel
         editInputModel.value = factory.getAddingInputModel(model.nameButton.text.orEmpty())
     }
 
-    fun onEditFinished(name: String) {
+    fun onReplaceUserClicked(name: String) {
         viewModelScope.launch {
             currentUser?.let { model ->
                 val newButton = model.nameButton.copy(text = name)
                 val newModel = model.copy(nameButton = newButton)
-                users.remove(model)
-                users.add(newModel)
-                repository.addUser(newModel)
+                repository.replaceUser(model, newModel)
             }
         }
     }
