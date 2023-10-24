@@ -10,6 +10,8 @@ import com.cretihoy.wordminded2.presentation.navigation.NavRoutes.MenuNavRoute
 import com.cretihoy.wordminded2.presentation.screens.menu.MenuScreen
 import com.cretihoy.wordminded2.presentation.screens.rules.RulesScreen
 import com.cretihoy.wordminded2.presentation.screens.rules.RulesViewModel
+import com.cretihoy.wordminded2.presentation.screens.settings.SettingsScreen
+import com.cretihoy.wordminded2.presentation.screens.settings.SettingsViewModel
 
 @Composable
 fun RouterScreen() {
@@ -40,14 +42,14 @@ fun RouterScreen() {
                 viewModel = viewModel
             )
         }
-//
-//        composable(SettingsNavRoute.route) {
-//            val viewModel = hiltViewModel<SettingsViewModel>()
-//            SettingsScreen(
-//                viewModel = viewModel,
-//                navController = navController
-//            )
-//        }
+
+        composable(NavRoutes.SettingsNavRoute.route) {
+            val viewModel = hiltViewModel<SettingsViewModel>()
+            SettingsScreen(
+                viewModel = viewModel,
+                navController = navController
+            )
+        }
 //
 //        composable(UsersNavRoute.route) {
 //            val viewModel = hiltViewModel<UsersViewModel>()
