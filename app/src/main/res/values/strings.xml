@@ -29,6 +29,12 @@
     <string name="reset_settings_button_yes">Yes</string>
     <string name="reset_settings_button_no">No</string>
 
+    <string name="manage_users_title">Players Management</string>
+    <string name="manage_users_button_add_new_name">Add new user</string>
+
+    <string name="add_new_name_title">Enter the name</string>
+    <string name="add_new_name_edit">New name for player</string>
+
     <string name="letter_01">A</string>
     <string name="letter_02">B</string>
     <string name="letter_03">C</string>
