@@ -7,6 +7,9 @@
 
     <string name="timer_dialog">Game will start in</string>
 
+    <string name="who_are_play">Who are play?</string>
+    <string name="go">Go!</string>
+
     <string name="game_end_title">Game end</string>
     <string name="game_end_button">Play again</string>
 
