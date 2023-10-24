@@ -7,6 +7,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.cretihoy.wordminded.compose.presentation.screen.game.GameScreen
 import com.cretihoy.wordminded.compose.presentation.screen.menu.MenuViewModel
+import com.cretihoy.wordminded2.presentation.screens.users.UsersScreen
+import com.cretihoy.wordminded2.presentation.screens.users.UsersViewModel
 import com.cretihoy.wordminded2.presentation.navigation.NavRoutes.MenuNavRoute
 import com.cretihoy.wordminded2.presentation.screens.game.GameViewModel
 import com.cretihoy.wordminded2.presentation.screens.menu.MenuScreen
@@ -52,12 +54,12 @@ fun RouterScreen() {
                 navController = navController
             )
         }
-//
-//        composable(UsersNavRoute.route) {
-//            val viewModel = hiltViewModel<UsersViewModel>()
-//            UsersScreen(
-//                viewModel = viewModel
-//            )
-//        }
+
+        composable(NavRoutes.UsersNavRoute.route) {
+            val viewModel = hiltViewModel<UsersViewModel>()
+            UsersScreen(
+                viewModel = viewModel
+            )
+        }
     }
 }
