@@ -2,7 +2,9 @@ package com.cretihoy.wordminded2.data
 
 import android.app.Activity
 import android.content.Context
+import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
+import com.cretihoy.wordminded2.presentation.components.user.UserModel
 import javax.inject.Inject
 
 private const val PREFERENCES_KEY = "Wordminded"
@@ -13,6 +15,9 @@ private const val INFINITY_GAME_KEY = "infinityGame"
 
 class Storage
 @Inject constructor() {
+
+    val firstPlayer: MutableState<UserModel?> = mutableStateOf(null)
+    val secondPlayer: MutableState<UserModel?> = mutableStateOf(null)
 
     var savedActivity: Activity? = null
     val fontSize = mutableStateOf(18f)
