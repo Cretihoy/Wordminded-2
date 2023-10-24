@@ -1,4 +1,4 @@
-package com.cretihoy.wordminded.compose.presentation.screen.game
+package com.cretihoy.wordminded2.presentation.screens.game
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize

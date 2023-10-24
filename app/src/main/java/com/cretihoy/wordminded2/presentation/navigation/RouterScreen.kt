@@ -5,8 +5,8 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.cretihoy.wordminded.compose.presentation.screen.game.GameScreen
-import com.cretihoy.wordminded.compose.presentation.screen.menu.MenuViewModel
+import com.cretihoy.wordminded2.presentation.screens.game.GameScreen
+import com.cretihoy.wordminded2.presentation.screens.menu.MenuViewModel
 import com.cretihoy.wordminded2.presentation.screens.users.UsersScreen
 import com.cretihoy.wordminded2.presentation.screens.users.UsersViewModel
 import com.cretihoy.wordminded2.presentation.navigation.NavRoutes.MenuNavRoute

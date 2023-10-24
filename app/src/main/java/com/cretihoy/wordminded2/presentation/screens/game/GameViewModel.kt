@@ -2,6 +2,7 @@ package com.cretihoy.wordminded2.presentation.screens.game
 
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
+import com.cretihoy.wordminded2.presentation.screens.end.EndGameModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

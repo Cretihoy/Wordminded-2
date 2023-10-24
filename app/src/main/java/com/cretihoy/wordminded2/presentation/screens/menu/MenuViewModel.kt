@@ -1,4 +1,4 @@
-package com.cretihoy.wordminded.compose.presentation.screen.menu
+package com.cretihoy.wordminded2.presentation.screens.menu
 
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel

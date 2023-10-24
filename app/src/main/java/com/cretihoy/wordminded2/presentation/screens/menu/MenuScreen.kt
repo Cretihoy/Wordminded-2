@@ -7,7 +7,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
-import com.cretihoy.wordminded.compose.presentation.screen.menu.MenuViewModel
 import com.cretihoy.wordminded2.presentation.screens.timer.TimerScreen
 import com.cretihoy.wordminded2.extensions.openRulesScreen
 import com.cretihoy.wordminded2.extensions.openSettingsScreen

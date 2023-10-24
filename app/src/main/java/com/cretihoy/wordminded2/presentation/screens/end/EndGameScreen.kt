@@ -7,7 +7,6 @@ import com.cretihoy.wordminded2.presentation.components.button.ButtonView
 import com.cretihoy.wordminded2.presentation.components.rotate.RotateView
 import com.cretihoy.wordminded2.presentation.components.spacer.SpacerView
 import com.cretihoy.wordminded2.presentation.components.text.TextView
-import com.cretihoy.wordminded2.presentation.screens.game.EndGameModel
 
 @Composable
 fun EndGameScreen(
