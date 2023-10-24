@@ -12,12 +12,17 @@ private val lightColorPalette = lightColorScheme(
     onBackground = Black,
 
     primary = LightBlue,
-    primaryContainer = DarkBlue,
     onPrimary = White,
+    primaryContainer = DarkBlue,
+
+    onError = LightYellow,
+
+    surface = DarkGray,
+    onSurface = LightGray,
 
     secondary = LightRed,
-    secondaryContainer = DarkRed,
-    onSecondary = Black
+    onSecondary = Black,
+    secondaryContainer = DarkRed
 )
 
 private val darkColorPalette = darkColorScheme(
@@ -25,12 +30,17 @@ private val darkColorPalette = darkColorScheme(
     onBackground = White,
 
     primary = DarkBlue,
-    primaryContainer = LightBlue,
     onPrimary = Black,
+    primaryContainer = LightBlue,
+
+    onError = DarkYellow,
+
+    surface = LightGray,
+    onSurface = DarkGray,
 
     secondary = DarkRed,
-    secondaryContainer = LightRed,
-    onSecondary = White
+    onSecondary = White,
+    secondaryContainer = LightRed
 )
 
 @Composable
