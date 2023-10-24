@@ -27,7 +27,8 @@ fun TimerScreen(
 
     ModalView(
         isShown = isShown,
-        modifier = modifier
+        modifier = modifier,
+        action = { viewModel.canGoNext.value = true }
     ) {
         TextView(viewModel.titleModel)
         SpacerView(viewModel.titleModel, viewModel.counterModel)
