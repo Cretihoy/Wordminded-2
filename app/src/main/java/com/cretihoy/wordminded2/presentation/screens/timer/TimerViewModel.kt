@@ -1,11 +1,10 @@
-package com.cretihoy.wordminded.compose.presentation.screen.timer
+package com.cretihoy.wordminded2.presentation.screens.timer
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.cretihoy.wordminded2.presentation.components.text.TextModel
-import com.cretihoy.wordminded2.presentation.screens.timer.TimerModelFactory
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay

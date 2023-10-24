@@ -6,7 +6,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
-import com.cretihoy.wordminded.compose.presentation.screen.timer.TimerViewModel
 import com.cretihoy.wordminded2.extensions.openGameScreen
 import com.cretihoy.wordminded2.presentation.components.modal.ModalView
 import com.cretihoy.wordminded2.presentation.components.spacer.SpacerView
