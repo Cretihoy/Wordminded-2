@@ -58,7 +58,7 @@ class UserModelFactory
     fun getUserModel(name: String): UserModel {
         return UserModel(
             id = System.currentTimeMillis() + name.hashCode(),
-            score = 0,
+            score = mutableStateOf(0),
             nameButton = ButtonModel(
                 fontSize = storage.fontSize,
                 text = name

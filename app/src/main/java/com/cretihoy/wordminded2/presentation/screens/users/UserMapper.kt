@@ -1,5 +1,6 @@
 package com.cretihoy.wordminded2.presentation.screens.users
 
+import androidx.compose.runtime.mutableStateOf
 import com.cretihoy.wordminded2.data.Storage
 import com.cretihoy.wordminded2.data.db.UserEntity
 import com.cretihoy.wordminded2.presentation.components.button.ButtonModel
@@ -15,14 +16,14 @@ class UserMapper @Inject constructor(
         return UserEntity(
             id = model.id,
             name = model.nameButton.text.orEmpty(),
-            score = model.score
+            score = model.score.value ?: 0
         )
     }
 
     fun map(user: UserEntity): UserModel {
         return UserModel(
             id = user.id,
-            score = user.score,
+            score = mutableStateOf(user.score),
             nameButton = ButtonModel(
                 fontSize = storage.fontSize,
                 text = user.name

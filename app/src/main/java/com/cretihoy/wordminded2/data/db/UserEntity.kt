@@ -14,5 +14,5 @@ data class UserEntity(
     val name: String,
 
     @ColumnInfo
-    val score: Long
+    val score: Int
 )
