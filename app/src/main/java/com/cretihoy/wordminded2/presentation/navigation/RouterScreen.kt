@@ -8,6 +8,8 @@ import androidx.navigation.compose.rememberNavController
 import com.cretihoy.wordminded.compose.presentation.screen.menu.MenuViewModel
 import com.cretihoy.wordminded2.presentation.navigation.NavRoutes.MenuNavRoute
 import com.cretihoy.wordminded2.presentation.screens.menu.MenuScreen
+import com.cretihoy.wordminded2.presentation.screens.rules.RulesScreen
+import com.cretihoy.wordminded2.presentation.screens.rules.RulesViewModel
 
 @Composable
 fun RouterScreen() {
@@ -32,12 +34,12 @@ fun RouterScreen() {
 //            )
 //        }
 //
-//        composable(RulesNavRoute.route) {
-//            val viewModel = hiltViewModel<RulesViewModel>()
-//            RulesScreen(
-//                viewModel = viewModel
-//            )
-//        }
+        composable(NavRoutes.RulesNavRoute.route) {
+            val viewModel = hiltViewModel<RulesViewModel>()
+            RulesScreen(
+                viewModel = viewModel
+            )
+        }
 //
 //        composable(SettingsNavRoute.route) {
 //            val viewModel = hiltViewModel<SettingsViewModel>()
