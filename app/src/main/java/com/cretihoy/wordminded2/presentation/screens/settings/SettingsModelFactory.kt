@@ -1,13 +1,13 @@
 package com.cretihoy.wordminded2.presentation.screens.settings
 
 import androidx.compose.runtime.mutableStateOf
-import com.cretihoy.wordminded2.presentation.components.counter.CounterModel
-import com.cretihoy.wordminded2.presentation.components.dialog.DialogModel
-import com.cretihoy.wordminded2.presentation.components.switch.SwitchModel
 import com.cretihoy.wordminded2.R
 import com.cretihoy.wordminded2.data.Storage
 import com.cretihoy.wordminded2.presentation.components.button.ButtonModel
+import com.cretihoy.wordminded2.presentation.components.counter.CounterModel
+import com.cretihoy.wordminded2.presentation.components.dialog.DialogModel
 import com.cretihoy.wordminded2.presentation.components.image.ImageModel
+import com.cretihoy.wordminded2.presentation.components.switch.SwitchModel
 import com.cretihoy.wordminded2.presentation.components.text.TextModel
 import javax.inject.Inject
 
@@ -33,7 +33,9 @@ class SettingsModelFactory
         return SwitchModel(
             fontSize = storage.fontSize,
             textAttr = R.string.settings_switch_change_orientation,
-            isChecked = storage.isHorizontal
+            isChecked = storage.isHorizontal,
+            isSecondary = true
+
         )
     }
 
@@ -41,7 +43,8 @@ class SettingsModelFactory
         return SwitchModel(
             fontSize = storage.fontSize,
             textAttr = R.string.settings_switch_change_theme,
-            isChecked = storage.isAltTheme
+            isChecked = storage.isAltTheme,
+            isSecondary = true
         )
     }
 
@@ -50,6 +53,7 @@ class SettingsModelFactory
             fontSize = storage.fontSize,
             textAttr = R.string.settings_switch_change_infinity,
             isChecked = storage.isInfinityGame,
+            isSecondary = true
         )
     }
 

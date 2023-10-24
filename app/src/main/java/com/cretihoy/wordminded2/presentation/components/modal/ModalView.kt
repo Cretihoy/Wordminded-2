@@ -24,6 +24,8 @@ fun ModalView(
     modifier: Modifier = Modifier,
     verticalArrangement: Arrangement.Vertical = Arrangement.Top,
     horizontalAlignment: Alignment.Horizontal = Alignment.Start,
+    isCancelable: Boolean = true,
+    action: () -> Unit = {},
     content: @Composable ColumnScope.() -> Unit
 ) {
     if (isShown.value) {
@@ -32,7 +34,11 @@ fun ModalView(
         ) {
             Box(
                 modifier = Modifier
-                    .clickable { isShown.value = false }
+                    .clickable {
+                        if (isCancelable) {
+                            isShown.value = false
+                        }
+                    }
                     .fillMaxSize()
                     .alpha(0.1f)
                     .background(MaterialTheme.colorScheme.onBackground))
@@ -42,6 +48,7 @@ fun ModalView(
                 modifier = modifier
                     .padding(spacingMedium)
                     .clip(Shapes.large)
+                    .clickable { action.invoke() }
                     .background(MaterialTheme.colorScheme.background)
                     .padding(spacingMedium)
             ) {

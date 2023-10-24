@@ -17,6 +17,7 @@ fun DialogView(
     isShown: MutableState<Boolean>,
     model: DialogModel? = null,
     modifier: Modifier = Modifier,
+    isCancelable: Boolean = true,
     leftClick: () -> Unit = {},
     rightClick: () -> Unit = {}
 ) {
@@ -24,25 +25,26 @@ fun DialogView(
         ModalView(
             isShown = isShown,
             modifier = modifier,
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            TextView(model.title)
-            SpacerView(model.title, model.description)
-            TextView(model.description)
-            SpacerView()
-            Row {
-                ButtonView(
-                    model.leftButton,
-                    clickAction = leftClick,
-                    modifier = Modifier.sizeIn(minWidth = minWidth)
-                )
-                SpacerView(model.leftButton, model.rightButton)
-                ButtonView(
-                    model.rightButton,
-                    clickAction = rightClick,
-                    modifier = Modifier.sizeIn(minWidth = minWidth)
-                )
-            }
-        }
+            isCancelable = isCancelable,
+            horizontalAlignment = Alignment.CenterHorizontally,
+            content = {
+                TextView(model.title)
+                SpacerView(model.title, model.description)
+                TextView(model.description)
+                SpacerView()
+                Row {
+                    ButtonView(
+                        model.leftButton,
+                        clickAction = leftClick,
+                        modifier = Modifier.sizeIn(minWidth = minWidth)
+                    )
+                    SpacerView(model.leftButton, model.rightButton)
+                    ButtonView(
+                        model.rightButton,
+                        clickAction = rightClick,
+                        modifier = Modifier.sizeIn(minWidth = minWidth)
+                    )
+                }
+            })
     }
 }
