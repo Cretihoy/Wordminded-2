@@ -6,5 +6,6 @@ import androidx.compose.runtime.mutableStateOf
 data class SwitchModel(
     val fontSize: MutableState<Float>,
     val textAttr: Int? = null,
-    var isChecked: MutableState<Boolean> = mutableStateOf(false)
+    var isChecked: MutableState<Boolean> = mutableStateOf(false),
+    val isSecondary: Boolean = false
 )
