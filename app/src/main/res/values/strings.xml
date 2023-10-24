@@ -12,4 +12,18 @@
     <string name="rules_text_two">The game "Wordminded" has two decks of cards of different colors: red and blue. Blue cards are categories that limit the search for the desired word. The deck is red - it shows letters that will help you find the right word, since they begin with these letters.</string>
     <string name="rules_text_three">Any player starts the game. He clicks on the screen of the phone. 2 cards appear. Players try as quickly as possible to name a word that fits the open category and starts with an open letter.</string>
 
+    <string name="settings_title">SETTINGS</string>
+    <string name="settings_switch_change_orientation">Change card orientation</string>
+    <string name="settings_switch_change_theme">Change theme</string>
+    <string name="settings_switch_change_infinity">Infinity game</string>
+    <string name="settings_counter_change_font_size">Font size</string>
+    <string name="settings_counter_minus">-</string>
+    <string name="settings_counter_plus">+</string>
+    <string name="settings_button_manage_users">Manage players</string>
+    <string name="settings_button_reset">Reset settings</string>
+
+    <string name="reset_settings_title">Are you sure?</string>
+    <string name="reset_settings_button_yes">Yes</string>
+    <string name="reset_settings_button_no">No</string>
+
 </resources>
