@@ -10,19 +10,21 @@ import com.cretihoy.wordminded2.presentation.components.spacer.SpacerView
 @Composable
 fun UserView(
     model: UserModel,
-    removeAction: (UserModel) -> Unit = {},
-    editAction: (UserModel) -> Unit = {}
+    removeAction: ((UserModel) -> Unit)? = null,
+    editAction: ((UserModel) -> Unit)? = null
 ) {
     Row(verticalAlignment = Alignment.CenterVertically) {
         ButtonView(
             modifier = Modifier.weight(1f),
             model = model.nameButton,
-            clickAction = { editAction.invoke(model) }
+            clickAction = { editAction?.invoke(model) }
         )
-        SpacerView()
-        ButtonView(
-            model = model.removeButton,
-            clickAction = { removeAction.invoke(model) }
-        )
+        SpacerView(removeAction, editAction)
+        removeAction?.let {
+            ButtonView(
+                model = model.removeButton,
+                clickAction = { it.invoke(model) }
+            )
+        }
     }
 }
